@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang= "en">
 <head>
-  <title>Best Bikes</title>
+  <title>BEST Bikes</title>
   <meta charset="utf-8"/>
   <!-- Link stylesheet -->
   <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -13,75 +13,102 @@
    <h3 id="C1">Welcome</h3>
    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
   Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+</p>
 
-  <h3 id="C2">BEST Bike Alu</h3>
+<div class="title" id="C2">BEST Team Explorer Aluminium</div>
+<br>
+<img src="jpeg/bikeAlu.jpg" alt="BEST Bike Aluminium" style="width:80px;height:80px;margin-right:5px;" title="BEST Bike Aluminium">
+<div class="bicycle"><span>This is the utlimate bicyle for all kind of road bike amateurs.
+You can cycle with this bike to everywhere.
+You will love it!
+Fact:
+Alumnium lite weight profiles.
+Aerodynamic and asymmetric frame.
+Weight: frame (size Medium) 800gr.
+
+Listen to it:</span>
+<audio controls>
+  <source src="sounds/bicycle.ogg" type="audio/ogg">
+  <source src="sounds/bicycle.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<div class="fixleft">
+Available colors:
+<select
+    onchange="this.className=this.options[this.selectedIndex].className"
+    class="blueColor">
+     <option class="blueColor" value="blue" >Blue</option>
+    <option class="greenColor" value="green" >Green</option>
+    <option class="redColor" value="red" >Red</option>
+    <option class="yellowColor" value="yellow" >Yellow</option>
+</select>
+<div>
+<div class="fixright">
+  Available sizes:
+  <form id="mainForm" name="mainForm">
+  <table>
+  <tbody>
+   <tr>
+     <td>
+    <input type="radio" name="gender" value="$1000" checked/>Small
+    </td>
+    <td>
+    <input type="radio" name="gender" value="$1100" />Medium
+    </td>
+    <td>
+    <input type="radio" name="gender" value="$1200" />Large
+    </td>
+  </tr>
+</tbody>
+</table>
+</form>
+<span id="result"></span>
+
+<script>
+document.mainForm.onclick = function(){
+  var gender = document.querySelector('input[name = gender]:checked').value;
+  result.innerHTML = 'Is available in store now! Price: '+gender;}
+</script>
+</div>
+
+   <h3 id="C3">BEST Team Explorer Carbon</h3>
+   UCI Approved
    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
   Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
-   <h3 id="C3">BEST Bike Carbon</h3>
+  <h3 id="C4">BEST Climb-Roller Alu</h3>
    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
   Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
-  <h3 id="C4">BEST MTB Alu</h3>
-   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-  <h3 id="C5">BEST MTB Carbon</h3>
+  <h3 id="C5">BEST Climb-Roller Carbon</h3>
    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
   Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 
   </article>
 
     <aside class="aside aside-1">
-
-      <div class="menu">
-        <div>
-          <a href="#C1">Welcome</a>
-        </div>
-      </div>
-      <div class="menu">
-        <div>
-          <a href="#C2">BEST Bike Alu</a>
-        </div>
-      </div>
-      <div class="menu">
-        <div>
-          <a href="#C3">BEST Bike Carbon</a>
-        </div>
-      </div>
-      <div class="menu">
-        <div>
-          <a href="#C4">BEST MTB Alu</a>
-        </div>
-      </div>
-      <div class="menu">
-        <div>
-          <a href="#C5">BEST MTB Carbon</a>
-        </div>
-      </div>
-
-    </aside>
+      <p class="menu"><a href="#C1">Welcome</a></p>
+      <p class="menu"><a href="#C2">BEST Team Explorer Alu</a></p>
+      <p class="menu"><a href="#C3">BEST Team Explorer Carbon</a></p>
+      <p class="menu"><a href="#C4">BEST Climb-Roller Alu</a></p>
+      <p class="menu"><a href="#C5">BEST Climb-Roller Carbon</a></p>
+      </aside>
 
     <aside class="aside aside-2">
 
-      <h1 style="font: italic 1.2em times new roman; text-align: center;">Designers</h1>
-      <div class="profilelayout">
-        <p>
-          <img class="profileimg" src="jpeg/johanlang.jpg" alt="Johan Lang" title="Johan Lang"> <span style="font: bolder 1.3em times new roman; color: darkblue;">Johan Lang</span><hr style="position: relative; left: -5px;"><br> <span style="margin-left: 5px;">MTB Developer</span><br><br><span style="margin-left: 5px;">Speciality:</span><ul> <li>Aero, Bike Design</li><li>Pro, Bike Welder</li></ul>
-        </p>
-      </div>
-      <div class="profilelayout">
-      <p> 
-        <img class="profileimg" src="jpeg/danielback.jpg" alt="Daniel Bäck" title="Daniel Bäck"> 
-        <span style="font: bolder 1.3em times new roman; color: darkblue;">
-        Daniel Bäck</span><hr style="position: relative; left: -5px;"> <br> <span style="margin-left: 5px;">Racer Developer</span><br><br><span style="margin-left: 5px;">Speciality:</span> <ul> <li>aaaBBBccc</li><li>yyXXXzzz</li></ul> 
-      </p>
+      <div class="side">Designers:</div>
+    <div class="side">
+    <img src="jpeg/johanlang.jpg" alt="Johan Lång" style="width:50px;height:50px;margin-right:5px;" title="Johan Lång"><p>Johan Lång </p>
+          <p>MTB developer</p>
+          <p>Speciality:</p>
+            <ul class="in">
+              <li>Aero. bike design</li>
+              <li>Pro. bike welder</li>
+            </ul>
       </div>
 
-   </aside>
-
-    <footer class="footer">Products all handmade in Sweden as part of the Bicycle Worldwide Distribution(BWD). <div id="copyright"><img src="jpeg/copyright-symbol.png" alt="copyright symbol" title="copyright symbol" style="position: relative; width: 10px; height: 10px;"><pre>All Rights Reserved.</div>
-    </footer>
+     </aside>
+    <footer class="footer">Footer</footer>
   </div>
 </body>
 </html>
