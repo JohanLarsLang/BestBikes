@@ -1,0 +1,135 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  border: 2px solid lightgrey;
+  font-size: 28px;
+  text-align: center;
+  text-shadow: 2px 1px #0066FF;
+  vertical-align: super;
+  line-height: 5px;
+  background: #2F4F4F;
+  padding: 20px;
+  color: #9ACD32
+}
+
+.footer {
+  border-bottom: 2px solid darkgrey;
+  border-right: 1px solid darkgrey;
+  border-left: 1px solid darkgrey;
+  background: #1a1a00;
+  text-align: left;
+  color: darkgrey;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.main {
+  border-right: 1px solid darkgrey;
+  border-left: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
+  text-align: left;
+  background: #99CC33;
+}
+
+.aside {
+  background: #B0C4DE;
+  padding: 5px;
+  color: black;
+  text-align: left;
+  font-size: 16px;
+  width: 100px;
+  border-bottom: 1px solid darkgrey;
+  border-right: 1px solid darkgrey;
+  border-left: 1px solid darkgrey;
+}
+
+.aside-1 > * {
+  border: 5px solid darkgrey;
+  padding: 14px;
+  background-color: lightgrey;
+}
+
+.aside-1 {
+  display: table;
+  background-color: beige;
+}
+
+.aside-1 > div {
+  display: table-row;
+}
+
+.aside-1 > div > div {
+  display: table-cell;
+  
+}
+
+.menu{
+  color: black;
+  font-weight: bold;
+}
+.menu:hover {
+    background: #FFCC99;
+ }
+
+img {
+    float: left;
+}
+
+ul.in {
+    margin-top: -5px;
+    margin-left: -35px;
+    list-style-position: inside;
+}
+
+@media all and (max-width: 600px) {
+  .aside-1 { order: 1;}
+  .aside-2 { order: 2;}
+  .footer  { order: 3;}
+}
+
+@media all and (min-width: 600px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+  .aside { flex: 1 auto; }
+}
+
+body {
+  padding: 2em;
+}
+
+.profileimg {
+  width: 80px;
+  height: 80px;
+  margin: -10px 10px 10px 5px;
+  float: left;
+}
+
+.profilelayout {
+    border: 3px solid gray;
+    margin: 5px;
+    background-color: lightgrey;
+
+}
+
+ul > li {
+  font: italic 0.8em times new roman;
+}
+
+#copyright {
+  position: relative;
+  text-align: right;
+  float: right;
+}
