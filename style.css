@@ -11,14 +11,15 @@
 }
 
 .header {
-  border: 1px solid darkgrey;
-  font-size: 24px;
+  border: 2px solid lightgrey;
+  font-size: 40px;
   text-align: center;
   text-shadow: 2px 1px #0066FF;
   vertical-align: super;
   line-height: 5px;
-  background: #FFCC99;
+  background: #2F4F4F;
   padding: 20px;
+  color: #FFFFE0
 }
 
 .title {
@@ -43,26 +44,22 @@
     bottom:-0.25em;
     width:0.25em;
 }
-.bicycle > span{
+/*  .bicycle > span{
     position:relative;
-    z-index:0;
+   top: -20px;
+     z-index:0;
 }
-
-.fixright{
-  position: fix;
-  top: -200px;
-  right: 200px;
-  }
-
+*/
 
 .footer {
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 2px solid darkgrey;
   border-right: 1px solid darkgrey;
   border-left: 1px solid darkgrey;
-  background: #FFCC99;
+  background: #1a1a00;
   text-align: left;
-  color: deepskyblue;
-  font-weight: bold;
+   color: darkgrey;
+   font-weight: bold;
+   font-size: 8px;
 }
 
 .main {
@@ -70,11 +67,15 @@
   border-left: 1px solid darkgrey;
   border-bottom: 1px solid darkgrey;
   text-align: left;
-  background: #99CC33;
+  text-align: left;
+  background: palegreen;
+  /* background: #99CC33;
+  background-image: radial-gradient(#99CC33, orange);
+  background-image: url("bicycle-background.gif"); */
 }
 
 .aside {
-  background: #99CCFF;
+  background: #B0C4DE;
   padding: 5px;
   color: black;
   text-align: left;
@@ -85,23 +86,38 @@
   border-left: 1px solid darkgrey;
 }
 
-.menu{
-  color: black;
-  font-weight: bold;
+.aside-1 {
+  display: flex;
+  flex-direction: column;
 }
-.menu:hover {
-    background: #FFCC99;
- }
+
+.aside-1 > div {
+  display: block;
+  background-color: silver;
+  margin: 2px;
+  padding: 15px;
+  border: 1px solid white;
+}
+
+.aside-1 > div:hover{
+  background-color: palegreen;
+}
 
 img {
     float: left;
 }
 
 ul.in {
-    margin-top: -5px;
-    margin-left: -35px;
-    list-style-position: inside;
+  margin-top: -5px;
+  margin-left: -35px;
+  list-style-position: inside;
 }
+
+/*
+form.in {
+    margin-top: -70px;
+}
+*/
 
 .greenColor{ background-color:green; }
 
@@ -111,14 +127,115 @@ ul.in {
 
 .yellowColor{ background-color:yellow; }
 
+.wrapperText {
+  display: flex;
+}
 
-@media all and (max-width: 600px) {
-  .aside-1 { order: 1;}
-  .aside-2 { order: 2;}
-  .footer  { order: 3;}
+.right {
+  flex: 1;
+}
+
+.arrow{
+  position: realtive;
+  top: 10px;
+}
+.article{
+  border-top: 1px solid darkgrey;
+}
+
+.profileimg {
+  width: 100px;
+  height: 100px;
+  margin: -10px 10px 10px 5px;
+  float: left;
+}
+
+.profilelayout {
+    border: 1px solid lightgray;
+    margin: 5px;
+    background-color: beige;
+
+}
+
+ul > li {
+  font: bold 0.8em times new roman;
+
+}
+
+#copyright {
+  position: relative;
+  text-align: right;
+  float: right;
+  margin-right: 10px;
+  top: 1em;
+}
+
+#C1 {
+  position: relative;
+  text-align: center;
+  font: italic 1.8em times new roman;
+  color: black;
+}
+
+.bikemodelheader {
+  display: block;
+  text-align: center;
+  color: white;
+  border-top: 1px solid white;
+  padding-top: 20px;
+}
+
+.profilename {
+
+  font: bolder 1.3em times new roman;
+  color: darkblue;
+}
+
+.profiletitle {
+  display: block;
+  margin-left: 5px;
+}
+
+.profilespeciality {
+  display: block;
+  position: relative;
+  top: 15px;
+  text-align: left;
+}
+
+#designersheader {
+  font: bold 1.2em times new roman;
+  text-align: center;
+  padding: 25px 0px 20px 0px;
+}
+
+body {
+  padding: 2em;
 }
 
 @media all and (min-width: 600px) {
+  .left {
+    flex: 0 0 60%;
+  }
+}
+
+/* for mobile */
+@media all and (max-width: 768px) {
+  .left {
+    flex: 0 0 70%;
+  }
+
+  .aside-1 { order: 1;}
+  .main { order: 2;}
+  .aside-2 { order: 3;}
+  .footer  { order: 4;}
+}
+
+/* for desktop */
+@media all and (min-width: 768px) {
+  .left {
+    flex: 0 0 80%;
+   }
   .main    { flex: 3 0px; }
   .aside-1 { order: 1; }
   .main    { order: 2; }

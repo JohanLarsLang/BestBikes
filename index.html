@@ -7,24 +7,30 @@
   <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-  <div class="wrapper">
+<div class="wrapper">
     <header class="header">BEST Bikes</header>
-    <article class="main">
-   <h3 id="C1">Welcome</h3>
-   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-</p>
 
+<div class="main">
+
+<header class="title">
+        <h3 id="C1">Welcome</h3>
+      </header>
+      <p> <img src="jpeg/bike-competion.jpg" alt="Race Bikes" title="Race Bikes" style="float: left;"> <img src="jpeg/mtb-bike-competion.jpg" alt="MTB Bikes" title="MTB Bikes" style="float: left;"> <span style="display: inline-block; margin-top: 30px;">BEST bike is the ultimate bike for anyone. Dosen´t matter if you are a bigginer or world champion of bike road racing or cross biking.
+            We handmade every bike accoring to your request with top of the line material and experience.
+            Our bikes are the best int e world, therefore the name: "BEST"!
+            So just get a Best bike...</span></p>
+
+<div class="article">
+<br>
 <div class="title" id="C2">BEST Team Explorer Aluminium</div>
 <br>
-<img src="jpeg/bikeAlu.jpg" alt="BEST Bike Aluminium" style="width:80px;height:80px;margin-right:5px;" title="BEST Bike Aluminium">
-<div class="bicycle"><span>This is the utlimate bicyle for all kind of road bike amateurs.
+<img src="jpeg/bikeAlu.jpg" alt="BEST Bike Aluminium" style="width:100px;height:100px;margin-right:5px;" title="BEST Bike Aluminium"><div class="bicycle"><span>This is the utlimate bicyle for all kind of road bike amateurs.
 You can cycle with this bike to everywhere.
 You will love it!
 Fact:
 Alumnium lite weight profiles.
 Aerodynamic and asymmetric frame.
-Weight: frame (size Medium) 800gr.
+Weight: frame (size Medium) 1300gr.
 
 Listen to it:</span>
 <audio controls>
@@ -32,83 +38,329 @@ Listen to it:</span>
   <source src="sounds/bicycle.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
-<div class="fixleft">
-Available colors:
-<select
-    onchange="this.className=this.options[this.selectedIndex].className"
-    class="blueColor">
-     <option class="blueColor" value="blue" >Blue</option>
-    <option class="greenColor" value="green" >Green</option>
-    <option class="redColor" value="red" >Red</option>
-    <option class="yellowColor" value="yellow" >Yellow</option>
-</select>
-<div>
-<div class="fixright">
-  Available sizes:
-  <form id="mainForm" name="mainForm">
+<br>
+<div class="wrapperText">
+<div class="left">Sizes & Pices:
+  <br>
+  <form class="in" name="mainForm1">
+  <table>
+  <tbody>
+   <tr>
+    <td><input type="radio" name="gender1" value="$1000" checked/>Small</td>
+    <td><input type="radio" name="gender1" value="$1100" />Medium</td>
+    <td><input type="radio" name="gender1" value="$1200" />Large</td>
+  </tr>
+</tbody>
+</table>
+</form>
+<p id="result1"></p>
+<script>
+document.mainForm1.onclick = function(){
+var gender = document.querySelector('input[name = gender1]:checked').value;
+ result1.innerHTML = 'Is available in store now! Price: '+gender;}
+</script>
+</div>
+
+<div class="right">Colors:
+  <select
+      onchange="this.className=this.options[this.selectedIndex].className"
+      class="blueColor">
+       <option class="blueColor" value="blue" >Blue</option>
+      <option class="greenColor" value="green" >Green</option>
+      <option class="redColor" value="red" >Red</option>
+      <option class="yellowColor" value="yellow" >Yellow</option>
+  </select>
+  <br>
   <table>
   <tbody>
    <tr>
      <td>
-    <input type="radio" name="gender" value="$1000" checked/>Small
+    <a href="#C3"><img class="floatright" alt="Down next" src="jpeg/Down-next.jpg" style="width:40px;height:40px;" title="Down next"></a>
     </td>
     <td>
-    <input type="radio" name="gender" value="$1100" />Medium
+    <a href="#C1"><img class="floatright" alt="Up to top" src="jpeg/Up-top.jpg" style="width:40px;height:40px;" title="Up to top"></a>
+    </td>
+    </tr>
+</tbody>
+</table>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="article">
+<br>
+<div class="title" id="C3">BEST Team Explorer Carbon</div>
+<br>
+<img src="jpeg/bikeCarbon.jpg" alt="BEST Team Explorer Carbon" style="width:100px;height:100px;margin-right:5px;" title="BEST Team Explorer Carbon"><div class="bicycle"><span>This is the utlimate bicyle for road bike professionals.
+You will win any road race with this bike.
+You will love it!
+Fact:
+Carbon lite weight profiles.
+Aerodynamic and asymmetric frame.
+Weight: frame (size medium) 800gr.
+UCI Approved.
+
+Listen to it:</span>
+<audio controls>
+  <source src="sounds/bicycle2.ogg" type="audio/ogg">
+  <source src="sounds/bicycle2.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<div class="wrapperText">
+<div class="left">Sizes & Pices:
+  <form class="in" name="mainForm2">
+  <table>
+  <tbody>
+   <tr>
+     <td>
+    <input type="radio" name="gender2" value="$2000" checked/>Small
     </td>
     <td>
-    <input type="radio" name="gender" value="$1200" />Large
+    <input type="radio" name="gender2" value="$2100" />Medium
+    </td>
+    <td>
+    <input type="radio" name="gender2" value="$2200" />Large
     </td>
   </tr>
 </tbody>
 </table>
 </form>
-<span id="result"></span>
-
+<p id="result2"></p>
 <script>
-document.mainForm.onclick = function(){
-  var gender = document.querySelector('input[name = gender]:checked').value;
-  result.innerHTML = 'Is available in store now! Price: '+gender;}
+  document.mainForm2.onclick = function(){
+  var gender = document.querySelector('input[name = gender2]:checked').value;
+   result2.innerHTML = 'Is available in store now! Price: '+gender;}
 </script>
 </div>
 
-   <h3 id="C3">BEST Team Explorer Carbon</h3>
-   UCI Approved
-   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+<div class="right">Colors:
+  <select
+      onchange="this.className=this.options[this.selectedIndex].className"
+      class="redColor">
+      <option class="redColor" value="red" >Red</option>
+      <option class="yellowColor" value="yellow" >Yellow</option>
+  </select>
+  <table>
+  <tbody>
+   <tr>
+     <td>
+       <a href="#C4"><img class="floatright" src="jpeg/Down-next.jpg"  alt="Down next" style="width:40px;height:40px;" title="Down next"></a>
+     </td>
+     <td>
+       <a href="#C2"><img src="jpeg/Up-pre.jpg"  alt="Up previous" style="width:40px;height:40px;" title="Up previous"></a>
+    </td>
+    <td>
+      <a href="#C1"><img class="floatright" src="jpeg/Up-top.jpg" alt="Up to top" style="width:40px;height:40px;" title="Up to top"></a>
+    </td>
+    </tr>
+</tbody>
+</table>
+  </div>
+</div>
+</div>
+</div>
 
-  <h3 id="C4">BEST Climb-Roller Alu</h3>
-   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+<div class="article">
+<br>
+<div class="title" id="C4">BEST Climb-Roller Aluminium</div>
+<br>
+<img src="jpeg/MtbAlu.png" alt="BEST Climb-Roller Aluminium" style="width:100px;height:100px;margin-right:5px;" title="BEST Climb-Roller Aluminium"><div class="bicycle"><span>This is the utlimate MTB bicyle for all kind of cross bike amateurs.
+You can cycle with this bike everywhere.
+You will love it!
+Fact:
+Alumnium lite weight profiles.
+Aerodynamic and asymmetric frame.
+Weight: frame (size Medium) 1800gr.
 
-  <h3 id="C5">BEST Climb-Roller Carbon</h3>
-   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+Listen to it:</span>
+<audio controls>
+  <source src="sounds/bicycle3.ogg" type="audio/ogg">
+  <source src="sounds/bicycle3.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 
-  </article>
+<div class="wrapperText">
+<div class="left">Sizes & Pices:
+  <form class="in" name="mainForm3">
+  <table>
+  <tbody>
+   <tr>
+     <td>
+    <input type="radio" name="gender3" value="$800" checked/>Small
+    </td>
+    <td>
+    <input type="radio" name="gender3" value="$900" />Medium
+    </td>
+    <td>
+    <input type="radio" name="gender3" value="$1000" />Large
+    </td>
+  </tr>
+</tbody>
+</table>
+</form>
+<p id="result3"></p>
+<script>
+  document.mainForm3.onclick = function(){
+  var gender = document.querySelector('input[name = gender3]:checked').value;
+   result3.innerHTML = 'Is available in store now! Price: '+gender;}
+</script>
+</div>
 
-    <aside class="aside aside-1">
-      <p class="menu"><a href="#C1">Welcome</a></p>
-      <p class="menu"><a href="#C2">BEST Team Explorer Alu</a></p>
-      <p class="menu"><a href="#C3">BEST Team Explorer Carbon</a></p>
-      <p class="menu"><a href="#C4">BEST Climb-Roller Alu</a></p>
-      <p class="menu"><a href="#C5">BEST Climb-Roller Carbon</a></p>
-      </aside>
+<div class="right">Colors:
+  <select
+      onchange="this.className=this.options[this.selectedIndex].className"
+      class="blueColor">
+       <option class="blueColor" value="blue" >Blue</option>
+      <option class="greenColor" value="green" >Green</option>
+      <option class="redColor" value="red" >Red</option>
+      <option class="yellowColor" value="yellow" >Yellow</option>
+  </select>
+  <br>
+  <table>
+  <tbody>
+   <tr>
+     <td>
+       <a href="#C5"><img class="floatright" src="jpeg/Down-next.jpg" alt="Down next" style="width:40px;height:40px;" title="Down next"></a>
+     </td>
+     <td>
+       <a href="#C3"><img src="jpeg/Up-pre.jpg"  alt="Up previous" style="width:40px;height:40px;" title="Up previous"></a>
+    </td>
+    <td>
+      <a href="#C1"><img class="floatright" src="jpeg/Up-top.jpg" alt="Up to top" style="width:40px;height:40px;" title="Up to top"></a>
+    </td>
+    </tr>
+</tbody>
+</table>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="article">
+<br>
+<div class="title" id="C5">BEST Climb-Roller Carbon</div>
+<br>
+<img src="jpeg/MtbCarbon.jpg" alt="BEST Climb-Roller Carbon" style="width:100px;height:100px;margin-right:5px;" title="BEST Climb-Roller Carbon"><div class="bicycle"><span>This is the utlimate MTB bicyle for cross bike professionals.
+You will win any cross race with this bike.
+You will love it!
+Fact:
+Carbon lite weight profiles.
+Aerodynamic and asymmetric frame.
+Weight: frame (size medium) 800gr.
+UCI Approved.
+
+Listen to it:</span>
+<audio controls>
+  <source src="sounds/bicycle4.ogg" type="audio/ogg">
+  <source src="sounds/bicycle4.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<div class="wrapperText">
+<div class="left">Sizes & Pices:
+  <form class="in" name="mainForm4">
+  <table>
+  <tbody>
+   <tr>
+     <td>
+    <input type="radio" name="gender4" value="$17000" checked/>Small
+    </td>
+    <td>
+    <input type="radio" name="gender4" value="$1800" />Medium
+    </td>
+    <td>
+    <input type="radio" name="gender4" value="$1900" />Large
+    </td>
+  </tr>
+</tbody>
+</table>
+</form>
+<p id="result4"></p>
+<script>
+  document.mainForm4.onclick = function(){
+  var gender = document.querySelector('input[name = gender4]:checked').value;
+   result4.innerHTML = 'Is available in store now! Price: '+gender;}
+</script>
+</div>
+
+<div class="right">Colors:
+  <select
+      onchange="this.className=this.options[this.selectedIndex].className"
+      class="redColor">
+      <option class="redColor" value="red" >Red</option>
+      <option class="yellowColor" value="yellow" >Yellow</option>
+  </select>
+  <table>
+  <tbody>
+   <tr>
+     <td>
+       <a href="#C4"><img src="jpeg/Up-pre.jpg" alt="Up previous" style="width:40px;height:40px;" title="Up previous"></a>
+    </td>
+    <td>
+      <a href="#C1"><img class="floatright" src="jpeg/Up-top.jpg" alt="Up to top" style="width:40px;height:40px;" title="Up to top"></a>
+    </td>
+    </tr>
+</tbody>
+</table>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<aside class="aside aside-1">
+
+      <div class="menu">
+        <div>
+          <a href="#C1">Welcome</a>
+        </div>
+      </div>
+      <div class="menu">
+        <div>
+          <a href="#C2">BEST Bike Alu</a>
+        </div>
+      </div>
+      <div class="menu">
+        <div>
+          <a href="#C3">BEST Bike Carbon</a>
+        </div>
+      </div>
+      <div class="menu">
+        <div>
+          <a href="#C4">BEST MTB Alu</a>
+        </div>
+      </div>
+      <div class="menu">
+        <div>
+          <a href="#C5">BEST MTB Carbon</a>
+        </div>
+      </div>
+
+    </aside>
 
     <aside class="aside aside-2">
 
-      <div class="side">Designers:</div>
-    <div class="side">
-    <img src="jpeg/johanlang.jpg" alt="Johan Lång" style="width:50px;height:50px;margin-right:5px;" title="Johan Lång"><p>Johan Lång </p>
-          <p>MTB developer</p>
-          <p>Speciality:</p>
-            <ul class="in">
-              <li>Aero. bike design</li>
-              <li>Pro. bike welder</li>
-            </ul>
+      <h1 id="designersheader">Designers</h1>
+      <div class="profilelayout">
+        <p>
+          <img class="profileimg" src="jpeg/johanlang.jpg" alt="Johan Lang" title="Johan Lang"> <span class="profilename">Johan Lang</span><hr><span class="profiletitle">MTB Developer</span><div class="profilespeciality">Speciality:<ul> <li>Aero, Bike Design</li><li>Pro, Bike Welder</li></ul> </div>
+
+      </div>
+      <div class="profilelayout">
+      <p>
+        <img class="profileimg" src="jpeg/danielback.jpg" alt="Daniel Bäck" title="Daniel Bäck">
+        <span class="profilename">
+        Daniel Bäck</span><hr><span class="profiletitle">Racer Developer</span><div class="profilespeciality">Speciality: <ul> <li>Geometry Design</li><li>Frame Testing, Hardware </li></ul> </div>
+
       </div>
 
-     </aside>
-    <footer class="footer">Footer</footer>
+   </aside>
+
+   <footer class="footer">Products all handmade in Sweden as part of the Bicycle Worldwide Distribution(BWD). <div id="copyright"><img src="jpeg/copyright-symbol.png" alt="copyright symbol" title="copyright symbol" style="position: relative; width: 10px; height: 10px;"><pre>All Rights Reserved.</pre></div>
+   </footer>
+
   </div>
 </body>
 </html>
